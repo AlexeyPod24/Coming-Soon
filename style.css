@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+    
+    body, html {
+    min-width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    }
+    
+    @font-face {
+      font-family: 'AdiHaus';
+      src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "AdiHaus";
+      src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+      font-weight: bold;
+      font-style: normal;
+    }
+    
+    body {
+      display: flex;
+    }
+    
+    .logo-container {
+     display: flex;
+      justify-content: center;
+    }
+    
+    .logo {
+      margin-top: 18px;
+      margin-bottom: 18px;
+    }
+    
+    .mainimage-mobile {
+      width: 100%;
+      height: 250px;
+      background-image: url("https://assets.codepen.io/6060109/athlete-girl.png");
+      background-position: center;
+      background-size: cover;
+      display: block;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    
+    .text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    
+    .one {
+      font-family: 'AdiHaus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 42px;
+    letter-spacing: 5px;
+    color: #CD3A24;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+    
+    .two {
+    font-family: 'AdiHaus';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    color: #423A3A;
+    text-align: center;
+    
+    }
+    
+    p {
+      font-family: 'AdiHaus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #333333;
+    margin: 15px 32px 30px 32px;
+    }
+    
+    form {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding-bottom: 79px;
+      
+    }
+    
+    #email {
+     width: 50%;
+     height: 30px;
+     padding-left: 24px;
+     opacity: 50%;
+     border: 1px solid #333333;
+     font-family: Adihaus;
+      font-size: 14px;
+      color: #828282;
+    }
+    
+    #button {
+      font-family: Adihaus;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      background-color: black;
+      width: 17%;
+    }
+    
+    #everything {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    #desktop-container {
+      display: none;
+    }
+    
+    @media only screen and (min-width: 768px) {
+      
+    .mainimage-mobile {
+    display: none;
+    }
+     
+      body {
+        background-image: url("https://assets.codepen.io/6060109/destop-bg.png");
+        background-size: cover;
+      }
+      
+      .text {
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+      margin-left: 70px;
+      
+    }
+      #everything {
+        width: 50%;
+        
+      }
+      
+      #desktop-container {
+        display: block;
+        width: 50%;
+        background-image: url("https://assets.codepen.io/6060109/athlete-big.png");
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+      
+       
+      }
+      .logo-container {
+        margin-bottom: 137px;
+        justify-content: flex-start;
+        margin-left: 75px;
+      
+      }
+      .one {
+    text-align: left;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+    
+    }
+    
+    .two {
+    text-align: left;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 71px;
+    }
+    
+    p {
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+      
+    }
+      
+      form {
+        margin-left: 67px; 
+      }
+      
+      #email {
+     width: 75%;
+     height: 50px;
+     padding-left: 24px;
+     opacity: 50%;
+     border: 1px solid #333333;
+     font-family: Adihaus;
+      font-size: 14px;
+      color: #828282;
+    }
+    
+    #button {
+      font-family: Adihaus;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      background-color: black;
+      width: 17%;
+    }
+    
+    }
+    
+    
